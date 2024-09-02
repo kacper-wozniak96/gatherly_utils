@@ -1,12 +1,30 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "target": "es2015",
-    "module": "commonjs",
-    "strict": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "isolatedModules": true,
     "esModuleInterop": true,
-    "lib": ["es2015"]
+    "baseUrl": "src",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "declaration": true,
+    "removeComments": true,
+    "paths": {
+      "utils/*": [
+        "utils/*"
+      ],
+      "widgets/*": [
+        "widgets/*"
+      ]
+    }
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src",
+    "type"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

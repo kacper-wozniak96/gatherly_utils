@@ -21,5 +21,5 @@ const signUpFormSchema = zod_1.z
 })
     .refine((data) => data.password === data.confirmPassword, {
     message: "Passwords do not match",
-    path: ["confirmPassword"], // Set the path of the error to the confirmPassword field
+    path: ["confirmPassword"],
 });
