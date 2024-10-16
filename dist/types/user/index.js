@@ -15,3 +15,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./createUser"), exports);
+__exportStar(require("./generateUserActivityReport"), exports);
+__exportStar(require("./loginUser"), exports);
+__exportStar(require("./updateUser"), exports);
+__exportStar(require("./user"), exports);
