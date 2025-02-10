@@ -1,3 +1,5 @@
 import { z } from "zod";
 
-export const confirmPasswordSchema = z.string();
+export const confirmPasswordSchema = z.object({
+  confirmPassword: z.string(),
+});
